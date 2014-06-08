@@ -1,2 +1,74 @@
 // Normally mainpage styles
- 
+$yellow: yellow
+html
+	font-size: 62.5% 
+div.wrapper
+	max-width: 800px
+	margin: auto 
+	background: url('../img/slider-image.jpg') 50% 0
+div.wrapper_about
+	background: url('../img/slider-image.jpg') 50% 2
+div.wrapper_program
+	background: url('../img/slider-image.jpg') 50% 2
+div.wrapper_admission
+	background: url('../img/slider-image.jpg') 50% 2
+.out
+	min-height: 400px  
+	padding: 30px
+	background-color: rgba(0, 0, 0, 0.7) 
+	+box
+.out_bgblue
+	background: rgba(0, 0, 255, 0.7)
+	
+.text-big
+	display: block
+	color: #FFF
+	font-weight: bold
+	+fs(18)
+.text-big_index	
+	margin-bottom: 20px 
+.text-big_about 
+	margin-bottom: 20px
+.text-big_program 
+	margin-bottom: 10px
+	
+.text-small
+	color: #FFF 
+	+fs(12)
+.text-small_about
+	padding-right: 80px 
+.text-small_yellow
+	color: $yellow
+.text-small_program
+	margin-bottom: 20px
+.text-small_cost
+	margin-top: 10px 
+	margin-bottom: 15px  
+
+.btn-apply
+	color: $yellow
+	text-transform: uppercase 
+	+fs(12) 
+	background: transparent
+	border: 1px solid $yellow
+	padding: 5px 10px
+	
+.page-main
+	padding-top: 50px 
+	+clr	
+.page-main__list
+	margin-top: 150px
+	+fs(0)
+	li
+		display: inline-block
+		+fs(12)
+		color: $yellow
+		width: 20%
+		
+.person
+	color: $yellow
+	+fs(12)
+.person__about
+	color: #FFF 
+	+fs(10)
+	margin-bottom: 10px
