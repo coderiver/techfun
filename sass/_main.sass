@@ -1,43 +1,72 @@
 // Normally mainpage styles
 $yellow: yellow
-html
-	font-size: 62.5% 
-div.wrapper
-	max-width: 800px
-	margin: auto 
-	background: url('../img/slider-image.jpg') 50% 0
-div.wrapper_about
-	background: url('../img/slider-image.jpg') 50% 2
-div.wrapper_program
-	background: url('../img/slider-image.jpg') 50% 2
-div.wrapper_admission
-	background: url('../img/slider-image.jpg') 50% 2
-.out
-	min-height: 400px  
-	padding: 30px
-	background-color: rgba(0, 0, 0, 0.7) 
+=regular
+	font-family: "ProximaNova-Regular", Arial, sans-serif
+=semibold
+	font-family: "ProximaNova-Semibold", Arial, sans-serif	
+=bold
+	font-family: "ProximaNova-Bold", Arial, sans-serif
+
+.wrapper-index 
+	background: url('../img/bg1.jpg') no-repeat 50% -76px
+.wrapper-about
+	background: url('../img/bg2.jpg') no-repeat 50% -76px
+.wrapper-program
+	background: url('../img/bg3.jpg') no-repeat 50% 0
+.wrapper-admission
+	background: url('../img/bg4.jpg') no-repeat 50% -76px
+main
+	width: 1280px
 	+box
-.out_bgblue
-	background: rgba(0, 0, 255, 0.7)
+	background: #555
+.page-content
+	background-color: rgba(0, 0, 0, 0.6) 
+	padding: 185px 50px 81px 50px
+	+box
+	+clr
+.page-content_about
+	background-color: rgba(0, 0, 255, 0.6)
+	padding-top: 191px 
+	padding-bottom: 110px 
+.page-content_program
+	padding-top: 192px 
+	padding-bottom: 92px
+.page-content_admission
+	background-color: rgba(0, 0, 255, 0.6)
+	padding-top: 192px 
+	padding-bottom: 146px
+	margin-bottom: 605px 	
+.page-content__list
+	margin-top: 239px
+	+fs(0)
+	li
+		display: inline-block
+		+fs(18)
+		+regular
+		color: $yellow
+		width: 20%
 	
 .text-big
-	display: block
 	color: #FFF
-	font-weight: bold
-	+fs(18)
+	+fs(30)
+	+bold
 .text-big_index	
-	margin-bottom: 20px 
+	margin-bottom: 35px 
 .text-big_about 
-	margin-bottom: 20px
+	line-height: 1.3 
+	margin-bottom: 27px
 .text-big_program 
 	margin-bottom: 10px
-	
-.text-small
-	color: #FFF 
-	+fs(12)
-.text-small_about
-	padding-right: 80px 
-.text-small_yellow
+.text-big_program + p
+	margin-bottom: 36px
+.text-big_admission
+	margin-bottom:  10px
+.text-big_cost
+	margin-bottom: 26px 
+.text-big_cost + p
+	margin-bottom:  39px
+
+.text-yellow
 	color: $yellow
 .text-small_program
 	margin-bottom: 20px
@@ -48,27 +77,46 @@ div.wrapper_admission
 .btn-apply
 	color: $yellow
 	text-transform: uppercase 
-	+fs(12) 
+	+fs(18) 
+	+semibold
 	background: transparent
 	border: 1px solid $yellow
-	padding: 5px 10px
-	
-.page-main
-	padding-top: 50px 
-	+clr	
-.page-main__list
-	margin-top: 150px
-	+fs(0)
-	li
-		display: inline-block
-		+fs(12)
-		color: $yellow
-		width: 20%
+	-webkit-border-radius: 3px 
+	border-radius: 5px 
+	padding: 13px 23px
+	&:hover
+		color: black
+		background: $yellow
 		
+.circle-list
+	padding-top: 30px  
+.circle
+	position: relative
+	padding-left: 110px 
+	height: 123px  
+	&:before
+		content: "" 
+		width: 89px 
+		height: 89px 
+		border: 1px solid $yellow
+		-webkit-border-radius:  50% 50%
+		border-radius:  50% 50%   
+		position: absolute
+		left: 0
+		top: -25px
+	 
+.l-col2_program li
+	margin-bottom: 25px
+	&:first-child
+		margin-bottom: 15px  
 .person
 	color: $yellow
-	+fs(12)
+	+fs(18)
+	+regular
+	margin-bottom: 5px 
 .person__about
 	color: #FFF 
-	+fs(10)
-	margin-bottom: 10px
+	+fs(14)
+	+regular
+.uppercase
+	text-transform: uppercase 

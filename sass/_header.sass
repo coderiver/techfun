@@ -1,6 +1,21 @@
-$yellow: yellow
-.page-header
+$yellow: #FFFF00
+=regular
+	font-family: "ProximaNova-Regular", Arial, sans-serif
+=semibold
+	font-family: "ProximaNova-Semibold", Arial, sans-serif	
+=bold
+	font-family: "ProximaNova-Bold", Arial, sans-serif
+	
+header
+	width: 1280px 
+	padding: 0 50px
+	padding-top: 41px  
+	background: transparent 
 	+clr
+	+box
+	position: fixed
+	top: 0
+	z-index: 10 
 .logo
 	float: left 
 	line-height: 1
@@ -8,11 +23,13 @@ $yellow: yellow
 		color: $yellow
 		text-transform: uppercase
 		font-weight: bold 
-		+fs(25)
+		+fs(40)
+		+bold
 		margin-bottom: 5px 
 	.logo__bottom
 		color: #FFF
-		+fs(12)
+		+fs(20)
+		+regular
 		a
 			color: #FFF 
 
@@ -24,9 +41,10 @@ $yellow: yellow
 			display: inline-block
 			vertical-align: top
 			text-align: center
-			margin-left: 10px 
+			margin-left: 50px 
 	.nav__item
-		+fs(10)
+		+fs(16)
+		+regular
 		color: #FFF
 		text-decoration: none
 		text-transform: uppercase
