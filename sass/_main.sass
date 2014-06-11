@@ -9,33 +9,49 @@ $yellow: yellow
 
 .wrapper-index 
 	background: url('../img/bg1.jpg') no-repeat 50% -76px
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+	background-attachment: fixed
 .wrapper-about
 	background: url('../img/bg2.jpg') no-repeat 50% -76px
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+	background-attachment: fixed
 .wrapper-program
-	background: url('../img/bg3.jpg') no-repeat 50% 0
+	background: url('../img/bg3.jpg') no-repeat 50% 0 
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+	background-attachment: fixed
 .wrapper-admission
-	background: url('../img/bg4.jpg') no-repeat 50% -76px
-main
-	width: 1280px
-	+box
-	background: #555
+	background: url('../img/bg4.jpg') no-repeat 50% -76px 
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover
+	background-attachment: fixed
+
+.mask-dark
+	background-color: rgba(0, 0, 0, 0.6)
+.mask-blue
+	background-color: rgba(0, 0, 255, 0.6)
+
 .page-content
-	background-color: rgba(0, 0, 0, 0.6) 
+	max-width: 1280px
+	margin: 0 auto   
 	padding: 185px 50px 81px 50px
 	+box
 	+clr
 .page-content_about
-	background-color: rgba(0, 0, 255, 0.6)
 	padding-top: 191px 
 	padding-bottom: 110px 
 .page-content_program
 	padding-top: 192px 
 	padding-bottom: 92px
 .page-content_admission
-	background-color: rgba(0, 0, 255, 0.6)
 	padding-top: 192px 
 	padding-bottom: 146px
-	margin-bottom: 605px 	
 .page-content__list
 	margin-top: 239px
 	+fs(0)
@@ -84,9 +100,11 @@ main
 	-webkit-border-radius: 3px 
 	border-radius: 5px 
 	padding: 13px 23px
+	+transition(all 0.2s linear)
 	&:hover
 		color: black
 		background: $yellow
+		
 		
 .circle-list
 	padding-top: 30px  

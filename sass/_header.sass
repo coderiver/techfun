@@ -5,19 +5,25 @@ $yellow: #FFFF00
 	font-family: "ProximaNova-Semibold", Arial, sans-serif	
 =bold
 	font-family: "ProximaNova-Bold", Arial, sans-serif
+
+.wrapper-header
+	width: 100%
+	position: fixed
+	top: 0  
+	z-index: 10
 	
 header
-	width: 1280px 
-	padding: 0 50px
+	max-width: 1280px
+	padding: 0 50px 
 	padding-top: 41px  
+	margin: 0 auto 
 	background: transparent 
 	+clr
 	+box
-	position: fixed
-	top: 0
-	z-index: 10 
+
 .logo
 	float: left 
+	width: 50% 
 	line-height: 1
 	.logo__top
 		color: $yellow
@@ -25,28 +31,40 @@ header
 		font-weight: bold 
 		+fs(40)
 		+bold
-		margin-bottom: 5px 
+		margin-bottom: 5px
+		+r1100
+			+fs(36)
 	.logo__bottom
 		color: #FFF
 		+fs(20)
 		+regular
+		+r1100
+			+fs(18)
 		a
-			color: #FFF 
+			color: #FFF
+			+r1100
+				+fs(18)
 
 .nav
 	float: right
+	width: 50%
+	text-align: right
 	.nav__list
 		+fs(0)
 		li
 			display: inline-block
 			vertical-align: top
 			text-align: center
-			margin-left: 50px 
+			margin-left: 8.474576%
+			+r1100
+				margin-left: 5%   
 	.nav__item
 		+fs(16)
 		+regular
 		color: #FFF
 		text-decoration: none
 		text-transform: uppercase
+		+r1100
+			+fs(14)
 	.nav__item_yellow
 		color: $yellow 
